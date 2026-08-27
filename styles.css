@@ -1,0 +1,48 @@
+/* CSS rest */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Styles the body */
+body {
+  background-color: #6914d8;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the piano to use flex box */
+.piano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.key {
+     /blank for now
+
+}
+
+.white { 
+  width: 100px;
+  height: 400px;
+  background-color: #fff;
+ border: 1px solid #333;
+}
+
+.black {
+  width: 60px;
+  height: 240px;
+  background-color: #000;
+  z-index: 2;
+  margin-left: -30px;
+  margin-right: -30px;
+}
