@@ -1,0 +1,52 @@
+/* CSS rest */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  background-color: #6914d8;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the piano to use flex box */
+.piano {
+  display: flex;
+  --width: 100px;
+  max-width: 100vw;
+}
+
+.key {
+     /* CSS variables */
+     height: calc(var(--width) * 4);
+     width: var(--width);
+}
+
+.white { 
+  width: 100px;
+  height: 400px;
+  background-color: #fff;
+ border: 1px solid #333;
+}
+
+.black {
+  width: 60px;
+  height: 240px;
+  background-color: #000;
+  z-index: 2;
+  margin-left: calc(-30px);
+  margin-right: calc(-30px);
+}
+
+.white.active {
+  background-color: #afa3a3a9;
+}
+.black.active {
+  background-color: #5f5151a9;
+}
